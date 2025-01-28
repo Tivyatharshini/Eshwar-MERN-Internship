@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            let bp=new Promise((resolve,reject)=>{
+                let reached=true;
+                if(reached){
+                    resolve()
+                }
+                else{
+                    reject()
+                }
+            })
+
+            bp.then(sucess)
+            .catch(failure)
+
+            function sucess(){
+                console.log("Reached")
+            }
+            function failure(){
+                console,log("Not reached")
+            }
+        </script>
+        </body>
+</html>

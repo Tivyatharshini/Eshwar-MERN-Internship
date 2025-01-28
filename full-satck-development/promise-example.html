@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            let thatkalbooking=new Promise((resolve,reject)=>{
+                let booking=false  // prompt("Enter the (true) or (false): ");
+                if(booking){
+                    resolve(2000)
+                }
+                else{
+                    reject(2000)
+                }
+            })
+
+            thatkalbooking.then((amt)=>console.log(`ok i will transferred ${amt}`))
+            .catch((money)=>{console.log(`Thank You for Trying!Return back my Money ${money}`)})
+
+            function success(){
+                console.log("Thank i will send money")
+            }
+
+            function failure(){
+                console.log("Thanks for trying")
+            }
+        </script>
+        </body>
+    </html>

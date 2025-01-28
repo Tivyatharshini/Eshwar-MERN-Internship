@@ -1,0 +1,16 @@
+<html lang="en">
+<body>
+<h1>My First Web_Page</h1>
+<p>This is an <span style="color: red;"> paragraph tag </span> here we can add paragraph</p>
+
+<script>
+
+var x=100
+if(x==100)
+alert("It is 100")
+
+
+</script>
+
+</body>
+</html>

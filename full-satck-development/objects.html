@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <script>
+
+            let obj1={"name":"sam","age":20,"sport":"Foot Ball"}
+
+            console.log(obj1)
+
+            console.log(obj1.name)
+            console.name(obj1["name"])
+
+
+            //modifying the objects value
+            obj1.name="Divi"
+
+            
+            console.log(obj1.name)
+            console.name(obj1["name"])
+
+            //adding new key
+            obj1.color="Black"
+
+
+            
+            console.log(obj1)
+            console.log(obj1.color)
+
+            for(let key in obj1){
+                console.key("keys"+key)
+
+            }
+
+
+            console.log("object methods")
+
+            console.log(Object.keys(obj1))
+            console.log(Object.values(obj1))
+            console.log(Object.entries(obj1))
+            var student={"name":"Divi","Age":19,"fav-food":"Chappathi"}
+
+            alert(student.name)
+            alert(student["name"])
+
+            student.name="taruuu"
+
+            student.dept="AIML"
+
+
+            for(let i in student){
+                alert(i)
+            }
+            //built in  methods: 
+            //keys
+            //values
+            //entries
+        </script>
+        </body>
+    </html>

@@ -1,0 +1,60 @@
+<html>
+
+<body>
+<script>
+
+let count=prompt("No.of. Lemons in Hand: ")
+count=parseInt(count)
+
+var i=1;
+
+
+
+if(count<21)
+{
+while(i<=3){
+
+if((count-7) >=0 || (count<0) ){
+console.log("God"+i+":offered 7")
+i=i+1
+count=count-7
+}
+else if(count<7 && count>=1)
+{
+console.log("God"+i+": having "+count+" Need "+(7-count))
+console.log("Shortage: "+(7-count))
+i=i+1
+}
+if(i==3){
+console.log("Shortage: "+(7-count))
+}
+else{
+console.log("God"+i+": Need"+(7-count))
+i=i+1
+}
+
+}
+}
+
+
+else if (count==21){
+console.log("god1:7 Offered")
+console.log("god2:7 Offered")
+console.log("god3:7 Offered")
+
+console.log("Sufficient")
+}
+
+else if(count>21){
+console.log("god1:7 Offered")
+console.log("god2:7 Offered")
+console.log("god3:7 Offered")
+console.log("Surplus: "+(count-21))
+}
+
+
+</script>
+
+</body>
+
+</html>

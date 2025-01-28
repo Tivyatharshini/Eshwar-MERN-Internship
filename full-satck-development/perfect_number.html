@@ -1,0 +1,32 @@
+<html>
+    <body>
+        
+        <script>
+            var nums = [];
+            var size = parseInt(prompt("Enter the size of array"));
+
+        
+            for (let i = 0; i < size; i++) {
+                nums[i] = parseInt(prompt("Enter the value: "));
+            }
+
+        
+            for (let i = 0; i < size; i++) {
+                let sum = 0;  
+        
+                for (let j = 1; j <= nums[i] / 2; j++) {
+                    if (nums[i] % j === 0) {
+                        sum += j;
+                    }
+                }
+
+                if (sum === nums[i]) {
+                    alert(nums[i] + " is a Perfect Number!");
+                }
+            }
+
+            alert("The nums array elements are: " + nums); 
+        </script>
+        
+    </body>
+</html>

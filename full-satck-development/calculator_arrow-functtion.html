@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 id="title">Calculator</h1>
+
+    <h3 id="add" class="add">Addition: </h3>
+    <h3 id="sub" class="sub">Subtraction: </h3>
+    <h3 id="mul" class="mul">Multiplication: </h3>
+    <h3 id="quo" class="quo">Quotient: </h3>
+    <h3 id="rem" class="rem">Remainder: </h3>
+    <h3 id="div" class="div">Division (formatted): </h3>
+
+    <style>
+        .add{
+            color:red;
+        }
+    </style>
+    <script>
+        
+        var num1 = parseFloat(prompt("Enter the First Number: "));
+        var num2 = parseFloat(prompt("Enter the Second Number: "));
+
+    
+        var addition = (a, b) => a + b;
+        var subtraction = (a, b) => a - b;
+        var multiplication = (a, b) => a * b;
+        var quotient = (a, b) => b != 0 ? a / b : "Division by zero!";
+        var remainder = (a, b) => b != 0 ? a % b : "Division by zero!";
+        var divisionFormatted = (a, b) => b != 0 ? (a / b).toFixed(2) : "Division by zero!";
+
+
+        document.getElementById("add").innerHTML += addition(num1, num2);
+        document.getElementById("sub").innerHTML += subtraction(num1, num2);
+        document.getElementById("mul").innerHTML += multiplication(num1, num2);
+        document.getElementById("quo").innerHTML += quotient(num1, num2);
+        document.getElementById("rem").innerHTML += remainder(num1, num2);
+        document.getElementById("div").innerHTML += divisionFormatted(num1, num2);
+    </script>
+</body>
+</html>
